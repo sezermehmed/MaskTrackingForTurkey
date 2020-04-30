@@ -10,38 +10,38 @@ namespace Workaround
     {
         static void Main(string[] args)
         {
-            Vatandas vatandas1 = new Vatandas();
+            Citizen vatandas1 = new Citizen();
 
-            SelamVer(" Engin");
-            SelamVer(" Ahmet");
-            SelamVer(" Ayse");
-            SelamVer();
+            SayHello(" Engin");
+            SayHello(" Ahmet");
+            SayHello(" Ayse");
+            SayHello();
 
-            int sonuc = Topla(3, 5);
+            int result = Sum(3, 5);
 
             // Arrays
-            string ogrenci1 = "Engin";
-            string ogrenci2 = "Kerem";
-            string ogrenci3 = "Berkay";
+            string student1 = "Engin";
+            string student2 = "Kerem";
+            string student3 = "Berkay";
 
-            string[] ogrenciler = new string[3];
-            ogrenciler[0] = "Engin";
-            ogrenciler[1] = "Kerem";
-            ogrenciler[2] = "Berkay";
+            string[] students = new string[3];
+            students[0] = "Engin";
+            students[1] = "Kerem";
+            students[2] = "Berkay";
 
-            ogrenciler = new string[4];
-            ogrenciler[3] = "ilker";
-            for (int i = 0; i < ogrenciler.Length; i++)
+            students = new string[4];
+            students[3] = "ilker";
+            for (int i = 0; i < students.Length; i++)
             {
-                Console.WriteLine(ogrenciler[i]);
+                Console.WriteLine(students[i]);
             }
 
-            string[] sehirler1 = new[] { "Ankara", "Istanbul", "Izmir" };
-            string[] sehirler2 = new[] { "Bursa", "Antalya", "Diyarbakir" };
+            string[] cities1 = new[] { "Ankara", "Istanbul", "Izmir" };
+            string[] cities2 = new[] { "Bursa", "Antalya", "Diyarbakir" };
 
-            sehirler2 = sehirler1;
-            sehirler1[0] = "Adana";
-            Console.WriteLine(sehirler2[0]);
+            cities2 = cities1;
+            cities1[0] = "Adana";
+            Console.WriteLine(cities2[0]);
 
             Person person1 = new Person();
             person1.Firstname = "SEZER";
@@ -52,57 +52,54 @@ namespace Workaround
             Person person2 = new Person();
             person2.Firstname = "Murat";
 
-            foreach (string sehir in sehirler1)
+            foreach (string city in cities1)
             {
-                Console.WriteLine(sehir);
+                Console.WriteLine(city);
             }
             //Mylist
-            List<string> yeniSehirler1 = new List<string> { "Ankara 1", "Istanbul 1 ", "Izmir 1" };
+            List<string> newCities1 = new List<string> { "Ankara 1", "Istanbul 1 ", "Izmir 1" };
 
-            yeniSehirler1.Add("Adana 1");
+            newCities1.Add("Adana 1");
 
-            foreach(var sehir in yeniSehirler1)
+            foreach(var city in newCities1)
             {
-                Console.WriteLine(sehir);
+                Console.WriteLine(city);
             }
             PttManager pttManager = new PttManager(new PersonManager());
             pttManager.GiveMask(person1);
-
-
-            
 
             Console.ReadLine();
         }
 
       
-       static void SelamVer(string isim = " isimsiz")
+       static void SayHello(string name = " isimsiz")
         {
-             Console.WriteLine("Merhaba" + isim );
+             Console.WriteLine("Hello" + name );
         } 
-        static int Topla(int sayi1 = 5, int sayi2 = 10)
+        static int Sum(int num1 = 5, int num2 = 10)
         {
-        int sonuc = sayi1 + sayi2;
-        Console.WriteLine("Tolpam: " + sonuc.ToString());
-        return sonuc;
+        int result = num1 + num2;
+        Console.WriteLine("Sum: " + result.ToString());
+        return result;
         }
-        private static void Degiskenler()
+        private static void Variables()
         {
-            string mesaj = "merhaba";
-            double tutar = 10000;
-            int sayi = 100;
-            bool girisYapmisMi = false;
+            string massage = "merhaba";
+            double amount = 10000;
+            int number = 100;
+            bool islogIn = false;
 
-            string ad = "Engin";
-            string soyad = "Demirog";
-            int dogumYili = 1985;
-            long tcNo = 12345678910;
+            string name = "Engin";
+            string surname = "Demirog";
+            int birthDate = 1985;
+            long identity = 12345678910;
         }
-        public class Vatandas
+        public class Citizen
         {
-            string ad = "Engin";
-            string soyad = "Demirog";
-            int dogumYili = 1985;
-            long tcNo = 12345678910;
+            string name = "Engin";
+            string surname = "Demirog";
+            int birthDate = 1985;
+            long identity = 12345678910;
         }
     }
    

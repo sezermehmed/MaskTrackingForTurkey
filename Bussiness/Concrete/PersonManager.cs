@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Business.Concrete
 {
-    // Ciplak class kalmasin
+    // should no empty class...
     public class PersonManager : IApplicantService
     {
         //encapsulation
@@ -23,7 +23,7 @@ namespace Business.Concrete
         public bool CheckPerson(Person person)
         {
             KPSPublicSoapClient client = new KPSPublicSoapClient(KPSPublicSoapClient.EndpointConfiguration.KPSPublicSoap);
-            //mernis kontrolu yapilacak
+            // Mernis check is here. (Official channel of Government.)
             return client.TCKimlikNoDogrulaAsync(
                 new TCKimlikNoDogrulaRequest
                 (new TCKimlikNoDogrulaRequestBody(person.NationalIdentitiy, person.Firstname, person.Lastname, person.DateOfBirthYear)))

@@ -10,7 +10,7 @@ namespace Business.Concrete
     {
         private IApplicantService _applicantService;
 
-        public PttManager(IApplicantService applicantService) //Constructer new yapildiginda calisir
+        public PttManager(IApplicantService applicantService) //it works when Constructer, new 
         {
             _applicantService = applicantService;
         }
@@ -19,11 +19,11 @@ namespace Business.Concrete
             
             if (_applicantService.CheckPerson(person))
             {
-                Console.WriteLine(person.Firstname + " icin maske verildi");
+                Console.WriteLine(person.Firstname + " mask is given.");
             }
             else
             {
-                Console.WriteLine(person.Firstname + " maske yok");
+                Console.WriteLine(person.Firstname + " no mask...");
             }
         }
     }
