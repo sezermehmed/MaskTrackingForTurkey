@@ -18,4 +18,4 @@ This project is not finished.
 Originall one is   => https://github.com/engindemirog/csharp_youtube
 
 
-    Many Thanks For Engin Demiroğ (Instructor).
+    Thanks For Engin Demiroğ (Instructor).
