@@ -11,7 +11,7 @@ Thanks to the instructor, this project made me understanding of OOP and a little
 Program can check Turkish ID informations, and if they are true, output will be " {UserName} mask is given" if not "No mask.." 
 
 
-This project is not finished.
+This project can be improved more.
 
 ################
 
