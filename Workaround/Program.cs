@@ -10,17 +10,17 @@ namespace Workaround
     {
         static void Main(string[] args)
         {
-            Citizen vatandas1 = new Citizen();
+          //  Citizen vatandas1 = new Citizen();
 
-            SayHello(" Engin");
-            SayHello(" Ahmet");
-            SayHello(" Ayse");
-            SayHello();
+            SayHello(" Sezer");
+           // SayHello(" Ahmet");
+           // SayHello(" Ayse");
+           // SayHello();
 
-            int result = Sum(3, 5);
+           // int result = Sum(3, 5);
 
             // Arrays
-            string student1 = "Engin";
+         /*   string student1 = "Engin";
             string student2 = "Kerem";
             string student3 = "Berkay";
 
@@ -42,40 +42,53 @@ namespace Workaround
             cities2 = cities1;
             cities1[0] = "Adana";
             Console.WriteLine(cities2[0]);
-
+         */
             Person person1 = new Person();
-            person1.Firstname = "SEZER";
-            person1.Lastname = "GÖNÜLCE";
-            person1.DateOfBirthYear = 1998;
-            person1.NationalIdentitiy = 11381527468;
+            _ = person1.Firstname;          // I dont know it is a good idea using _ for each, yet. It just works.
+            _ = person1.Lastname;
+            _ = person1.DateOfBirthYear;
+            _ = person1.NationalIdentitiy;
+            Console.Write("Your name:  ");
+            person1.Firstname = Console.ReadLine();
+            Console.Write("Your lastname:  ");
+            person1.Lastname = Console.ReadLine();
+            Console.Write("Your Birth year:  ");
+            person1.DateOfBirthYear = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Your ID:  ");
+            person1.NationalIdentitiy = Convert.ToInt64(Console.ReadLine());
 
-            Person person2 = new Person();
-            person2.Firstname = "Murat";
+            /*
 
-            foreach (string city in cities1)
-            {
-                Console.WriteLine(city);
-            }
-            //Mylist
-            List<string> newCities1 = new List<string> { "Ankara 1", "Istanbul 1 ", "Izmir 1" };
+                        Person person2 = new Person();
+                        person2.Firstname = "Murat";
 
-            newCities1.Add("Adana 1");
+                        foreach (string city in cities1)
+                        {
+                            Console.WriteLine(city);
+                        }
 
-            foreach(var city in newCities1)
-            {
-                Console.WriteLine(city);
-            }
+                        //Mylist
+                        List<string> newCities1 = new List<string> { "Ankara 1", "Istanbul 1 ", "Izmir 1" };
+
+                        newCities1.Add("Adana 1");
+
+                        foreach(var city in newCities1)
+                        {
+                            Console.WriteLine(city);
+                     }
+                     */
             PttManager pttManager = new PttManager(new PersonManager());
             pttManager.GiveMask(person1);
 
-            Console.ReadLine();
+           // Console.ReadLine();
         }
 
       
        static void SayHello(string name = " isimsiz")
         {
              Console.WriteLine("Hello" + name );
-        } 
+      } 
+      /*
         static int Sum(int num1 = 5, int num2 = 10)
         {
         int result = num1 + num2;
@@ -85,10 +98,10 @@ namespace Workaround
         private static void Variables()
         {
             string massage = "merhaba";
-            double amount = 10000;
+            double amount = 10000;              
             int number = 100;
             bool islogIn = false;
-
+            
             string name = "Engin";
             string surname = "Demirog";
             int birthDate = 1985;
@@ -101,6 +114,7 @@ namespace Workaround
             int birthDate = 1985;
             long identity = 12345678910;
         }
+      */
     }
    
  
