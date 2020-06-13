@@ -3,7 +3,7 @@ Program gives mask for people located in Turkey. It Checks ID information from o
 
 I did this project by watching following video https://www.youtube.com/watch?v=2EkMrrX9sYY   (Turkish Language)
 
-################
+
 
 Thanks to the instructor, this project made me understanding of OOP and a little bit SOLID, better. 
 
@@ -13,7 +13,7 @@ Program can check Turkish ID informations, and if they are true, output will be 
 
 This project can be improved more.
 
-################
+
 
 Originall one is   => https://github.com/engindemirog/csharp_youtube
 
