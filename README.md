@@ -1,5 +1,5 @@
 # MaskTrackingForTurkey
-Program checks Turkish ID Number, if ID is valid in official, then it says "{UserName} mask is given" ". 
+Program checks Turkish ID Number, if ID is valid in official, then it says "{UserName} mask is given" if not "No Mask". 
 
 I did this project by watching following video https://www.youtube.com/watch?v=2EkMrrX9sYY   (Turkish Language)
 
